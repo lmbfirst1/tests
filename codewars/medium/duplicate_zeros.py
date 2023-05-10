@@ -11,16 +11,15 @@ class Solution:
         Do not return anything, modify arr in-place instead.
         """
         n = len(arr)
-        a= []
+        a = []
         for i in range(len(arr)):
-            if arr[i]==0:
+            if arr[i] == 0:
                 a.append(i)
-        k =0
+        k = 0
         for i in range(len(a)):
-            arr.insert(a[i]+k,0)
-            k+=1
+            arr.insert(a[i]+k, 0)
+            k += 1
         m = len(arr)
         for i in range(m-n):
             arr.pop()
         return arr
-        
