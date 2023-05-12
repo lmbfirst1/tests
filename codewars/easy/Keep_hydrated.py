@@ -8,7 +8,7 @@ You get given the time in hours and you need to return the number of litres Nath
 
 def litres(time):
     litres_at_hour = time // 2
-    if time < 2:
+    if time < 2 :
         litres_at_hour = 0
     return litres_at_hour
 
