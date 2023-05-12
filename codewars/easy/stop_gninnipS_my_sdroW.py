@@ -10,7 +10,7 @@ Spaces will be included only when more than one word is present.
 def spin_words(sentence):
     spin_sentence = sentence.split()
     for word in range(len(spin_sentence)):
-        if len(spin_sentence[word]) > 4:
+        if len(spin_sentence[word]) > 4 :
             new_word = "".join(reversed(spin_sentence[word]))
             spin_sentence[word] = new_word
     sentence = " ".join(spin_sentence)
