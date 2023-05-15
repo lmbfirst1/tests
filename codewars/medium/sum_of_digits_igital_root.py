@@ -27,13 +27,8 @@ def digital_root(n):
         print(sum_of_digit)
         return sum_of_digit
 
-# А можно и так:
-# def digital_root(n):
-#     while n >= 10:
-#         n = sum(divmod(n, 10))
-#     return n
 
 
-if __name__ == '__main__':
+if __name__ ==  '__main__':
     digital_root(1539)
     digital_root(17)
