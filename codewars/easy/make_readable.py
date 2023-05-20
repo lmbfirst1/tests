@@ -11,12 +11,19 @@ You can find some examples in the test fixtures.
 
 """
 
+
 def make_readable(seconds):
     if seconds < 0 or seconds > 359999:
-        raise ValueError("Некорректное значение секунд.")
-    
+        raise ValueError(
+            "Некорректное значение секунд.")
+
     hours = seconds // 3600
     minutes = (seconds % 3600) // 60
     seconds = (seconds % 60)
-    
+
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+seconds = 3661
+formatted_time = make_readable(seconds)
+print(formatted_time)
