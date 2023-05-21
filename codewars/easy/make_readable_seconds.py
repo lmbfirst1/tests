@@ -24,6 +24,6 @@ def make_readable(seconds):
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
 
-seconds = 3661
+seconds = 43552
 formatted_time = make_readable(seconds)
 print(formatted_time)
