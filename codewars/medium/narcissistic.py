@@ -11,6 +11,6 @@ def narcissistic(value):
     return (value == sum(int(digit) ** numbers for digit in str_value))
 
 
-value = 371
+value = 407
 narc_format = narcissistic(value)
 print(narc_format)
