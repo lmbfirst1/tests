@@ -4,15 +4,15 @@ https://www.codewars.com/kata/52c31f8e6605bcc646000082/train/python
 в сумме таргетное число.
 """
 
-def two_sum(numbers, target):
-    for i in range(len(numbers)):
-        for j in range(i + 1, len(numbers)):
-            if numbers[i] + numbers[j] == target:
+
+def two_sum(numbers, t):
+    for i, x in enumerate(numbers):
+        for j, y in enumerate(numbers):
+            if i != j and x + y == t:
+                print([i, j])
                 return [i, j]
 
 
-
-
-# test.assert_equals(sorted(two_sum([1,2,3], 4)), [0,2])
-# test.assert_equals(sorted(two_sum([1234,5678,9012], 14690)), [1,2])
-# test.assert_equals(sorted(two_sum([2,2,3], 4)), [0,1])
+two_sum([1, 2, 3], 4)
+two_sum([1234, 5678, 9012], 14690)
+two_sum([2, 2, 3], 4)
