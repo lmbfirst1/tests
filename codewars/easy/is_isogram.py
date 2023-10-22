@@ -7,15 +7,8 @@ Assume the empty string is an isogram. Ignore letter case.
 
 
 def is_isogram(string):
-    string = string.lower()
-    if len(string) < 2:
-        return True
 
-    for i in range(len(string)):
-        for j in range(i + 1, len(string)):
-            if string[i] == string[j]:
-                return False
-    return True
+    True
 
 
 def main():
